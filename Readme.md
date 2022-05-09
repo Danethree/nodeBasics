@@ -32,4 +32,46 @@ app.listen(8081)
 
 ````
 
+**ATENÇÃO:**  O ``` app.listen ``` precisa ser chamado sempre por último na aplicação.
+
+
+
+# Rotas com params
+
+1) Estrutura:
+
+    - A estrutura da rota é:  
+
+    ```js
+    
+    '/algumacoisa/:nome/:idade' 
+    
+    ```
+    Nesse exemplo acima, o nome e idade são **_params_** que são puxados 
+    na requisição e são visualizados como resposta través de ```res.send() ```.
+    
+    - Exemplo do código:
+
+```js 
+           app.get('/ola/:cargo/:nome/:cor',function(req, res) {
+
+    res.send( `<h1> Olá, ${req.params.nome}</h1> <p> Voce eh ${req.params.cargo}
+    e sua cor favorita eh ${req.params.cor} </p>
+    `)
+
+})
+
+```
+
+ Nesse exemplo de cima temos um ```req.send``` que envia os dados 
+ de um html com os params sendo identificados por ```"req.params"```.
+ Para acessar um params expecífico, como por exemplo, nome, indicamos 
+ com um ```"."```após o ```req.params``` e o valor que deseja mostrar em tela, como por exemplo :
+
+ ``` js 
+    req.params.nome
+ ``` 
+
+
+  
 
