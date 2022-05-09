@@ -24,13 +24,12 @@ app.get('/sobre',(req,res) => {
 
 
 
-- Depois deve-se abrir o servidor. Neste exemplo vou usar a porta 8081:
+2) Depois deve-se abrir o servidor. Neste exemplo vou usar a porta 8081:
 
 ```js
 
 app.listen(8081)
 
 ````
-
 
 
