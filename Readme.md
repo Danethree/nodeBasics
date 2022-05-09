@@ -53,13 +53,14 @@ app.listen(8081)
     - Exemplo do código:
 
 ```js 
-           app.get('/ola/:cargo/:nome/:cor',function(req, res) {
+           app.get('/ola/:cargo/:nome/:cor',function(req, res) 
+           {
 
-    res.send( `<h1> Olá, ${req.params.nome}</h1> <p> Voce eh ${req.params.cargo}
-    e sua cor favorita eh ${req.params.cor} </p> 
-    `)
+            res.send( `<h1> Olá, ${req.params.nome}</h1> <p> Voce eh ${req.params.cargo}
+            e sua cor favorita eh ${req.params.cor} </p> 
+            `)
 
-})
+           })
 
 ```
 
@@ -83,7 +84,7 @@ app.listen(8081)
 })
 ````
 
-```'__dirname'```: Diretório raiz onde o arquivo está localizado
+```'__dirname'```: Diretório raiz onde o arquivo está localizado <br/> <br/>
 ````/htmlp/index.html````: Local onde se encontra o arquivo **_index.html_** recém criado. 
 
 
