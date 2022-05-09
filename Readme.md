@@ -73,5 +73,18 @@ app.listen(8081)
  ``` 
 
 
-  
+  - Envio de arquivos 
+
+  Para enviar um arquivo, ao invés de usar ```req.send``` use ```'req.sentFile'``` da seguinte forma:
+
+  ```js 
+  app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/htmlp/index.html')
+})
+````
+
+```'__dirname'```: Diretório raiz onde o arquivo está localizado
+````/htmlp/index.html````: Local onde se encontra o arquivo **_index.html_** recém criado. 
+
+
 
